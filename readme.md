@@ -59,7 +59,7 @@ project/
 ├── requirements.txt       # 패키지 목록    
 ├── .env (로컬용)         # API Key 저장    
 ├── README.md              # 프로젝트 설명    
-    
+
 ---
 
 ## 🚀 6. 실행 방법
@@ -92,19 +92,36 @@ streamlit run app.py
  https://www.pinkluna.shop 
 ( 2026.04.27 SSL발급 진행중 )
 
-## 배포 구조
+## 서비스 전체 구조
 
 본 서비스는 다음과 같은 구조로 배포되어 있습니다.
 
-사용자 (브라우저)   
-↓   
-pinkluna.shop (가비아 도메인)   
-↓ (DNS 설정)    
-[www.pinkluna.shop](https://www.pinkluna.shop)   
-↓   
-Streamlit Cloud (앱 호스팅)   
-↓   
-OpenAI API (AI 이미지 분석 & 문구 생성)   
+ 사용자 (브라우저)   
+        │    
+        ▼   
+ pinkluna.shop (커스텀 도메인)    
+        │   
+        ▼   
+ DNS (가비아)   
+        │   
+        ▼   
+ Streamlit Cloud (Frontend + Backend)   
+        │   
+        ├── 이미지 업로드 처리 (Pillow)   
+        ├── UI (Streamlit)    
+        │   
+        ▼   
+ OpenAI API (GPT-5-mini)    
+        │   
+        ├── 이미지 분석 (상품 특징 추출)    
+        └── 광고 문구 생성    
+        │   
+        ▼   
+ 결과 반환 (상품 설명 + 광고 카피 3개)    
+        │   
+        ▼   
+사용자 화면 출력    
+
 
 ---  
 
