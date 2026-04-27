@@ -53,13 +53,13 @@
 
 ##  5. 프로젝트 구조
 
-project/
-│
-├── app.py                 # 메인 Streamlit 앱
-├── requirements.txt       # 패키지 목록
-├── .env (로컬용)         # API Key 저장
-├── README.md              # 프로젝트 설명
-
+project/    
+│   
+├── app.py                 # 메인 Streamlit 앱    
+├── requirements.txt       # 패키지 목록    
+├── .env (로컬용)         # API Key 저장    
+├── README.md              # 프로젝트 설명    
+    
 ---
 
 ## 🚀 6. 실행 방법
