@@ -90,21 +90,21 @@ streamlit run app.py
  https://codeit-project-gk46kjufbjwgxeau8zsnr6.streamlit.app/
 
  https://www.pinkluna.shop 
-
+( 2026.04.27 SSL발급 진행중 )
 
 ## 배포 구조
 
 본 서비스는 다음과 같은 구조로 배포되어 있습니다.
 
-사용자 (브라우저)
-↓
-pinkluna.shop (가비아 도메인)
-↓ (DNS 설정)
-www.pinkluna.shop
-↓
-Streamlit Cloud (앱 호스팅)
-↓
-OpenAI API (AI 이미지 분석 & 문구 생성)
+사용자 (브라우저)   
+↓   
+pinkluna.shop (가비아 도메인)   
+↓ (DNS 설정)    
+www.pinkluna.shop   
+↓   
+Streamlit Cloud (앱 호스팅)   
+↓   
+OpenAI API (AI 이미지 분석 & 문구 생성)   
 
 ---  
 
