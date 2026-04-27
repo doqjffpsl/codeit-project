@@ -31,7 +31,7 @@ def encode_image(image: Image.Image):
     image.save(buffered, format="JPEG")
     return base64.b64encode(buffered.getvalue()).decode()
 
-if st.button("🚀 광고 문구 생성"):
+if st.button("광고 문구 생성"):
 
     if uploaded_file is None:
         st.warning("이미지를 업로드해주세요.")
@@ -79,8 +79,8 @@ if st.button("🚀 광고 문구 생성"):
 
         ad_text = ad_response.output_text
 
-    st.subheader("📌상품 분석")
+    st.subheader("상품 분석")
     st.write(description)
 
-    st.subheader("✨ 광고 문구")
+    st.subheader("광고 문구")
     st.write(ad_text)
